@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Test</title>
+        <link rel="import" href="https://widgets.wia.io/embed/wgt_W0IlEGmx/dev_zfbYFohC">
+    </head>
+    <body>
+        <p>Main page</p>
+        <p id="innerpage"></p>
+    </body>
+</html>
+<script>
+    var content = document.querySelector('link[rel="import"]').import;
+    console.log(content);
+    var inner = document.getElementById("innerpage");
+    inner.append(content.body)
+</script>
